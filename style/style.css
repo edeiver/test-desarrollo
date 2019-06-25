@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f7f7f6;
+    position: relative;
+    height: 100%;
+
+}
+.menu a{
+    color: white;
+    font-weight: 300;
+
+}
+.menu a.active{
+    font-weight: normal;
+}
+.menu a:first-child{
+margin-right: 30px;
+}
+.nav-left-section div, .nav-left-section a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-left-section .data{
+    padding-left: 30px;
+    border-left: 2px solid white;
+}
+.nav-left-section .data span{
+    font-weight: 300;
+    display: inline-block;
+}
+.nav-left-section .data h4{
+    margin: 0;
+}
+header nav{
+    background-color: #72c0db!important;
+    color: white;
+    padding: 20px 40px!important;
+    box-shadow: 00 2px 4px rgba(52, 58, 64, 0.06);
+}
+header h2{
+    margin-right: 30px!important;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#btn-primary{
+    background-color: #72c0db;
+    border: 0;
+    padding: 10px 40px;
+    margin: 20px 0;
+}
+section table{
+    box-shadow: 00 2px 4px rgba(52, 58, 64, 0.1);
+}
+section table thead{
+    background-color: #194767;    
+}
+section table thead tr th{
+    color: white;
+    font-weight: 300;
+
+}
+.tdColorBlue {
+    color: #72c0db;
+}
+section table tbody tr td i{
+    color:#e5aaa7;
+}
+.iDark, section table tbody tr th i{
+    color: #9295a1;
+}
+section table tbody tr td{
+    font-weight: 470;
+}
+footer{
+height: 250px;
+width: 100%;
+background-color: white;
+border-top: 1px solid #ececec;
+padding: 40px 0;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+}
+footer small{
+    float: right;
+    color: #ececec;
+}
+footer h4{
+    /*para que tome solo el espacio del h4*/
+    display: inline-block;
+}
+
+#myTable,#myTables{
+    border-color: white;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background-color: white;
+}
+form{
+    width: 60%;
+    padding: 40px;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #ececec;
+    box-shadow: 00 2px 4px rgba(52, 58, 64, 0.06);
+    border-radius: 5px;
+
+}
+form .button-container{
+    text-align: right;
+}
+form a{
+    margin-right: 20px;
+    padding: 10px 40px !important;
+}
