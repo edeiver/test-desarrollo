@@ -25,7 +25,7 @@ function ListData(){
         var tasks  = JSON.parse(localStorage.getItem("tasks"));
 
         for (var i = 0; i < tasks.length; i++) {
-          $("#TableBody").append('<tr> <th scope="row"><i class="material-icons">check_circle_outline</i></th> <td class="tdColorBlue"> '+ tasks[i].name +' </td> <td> '+tasks[i].limit+' </td><td> <i class="material-icons iDark">edit</i><i class="material-icons">delete_outline</i></td></tr>'  )
+          $("#TableBody").append('<tr> <th scope="row"><i class="material-icons">check_circle_outline</i></th> <td class="tdColorBlue" onclick="preview('+i+')"> '+ tasks[i].name +' </td> <td> '+tasks[i].limit+' </td><td> <i class="material-icons iDark">edit</i><i class="material-icons">delete_outline</i></td></tr>'  )
         }
 
     }else{
@@ -35,4 +35,11 @@ function ListData(){
 
 function isEmpty(){
   return title.value == null || title.value.length == 0 ||date.value == null || date.value.length == 0;
+}
+function preview(pos){
+  var tasks  = JSON.parse(localStorage.getItem("tasks"));
+  task = tasks[pos];
+  $('#emptyPrev').hide();
+  $('#footerPrev').append('<h4>'+ task.name+'</h4> <small>'+task.limit+'</small><p>'+task.dscp+'</p>')
+
 }

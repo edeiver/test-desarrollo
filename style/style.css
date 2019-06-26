@@ -117,3 +117,8 @@ form a{
     margin-right: 20px;
     padding: 10px 40px !important;
 }
+.center{
+    display: block;
+    text-align: center;
+    
+}
