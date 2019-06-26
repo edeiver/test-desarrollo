@@ -11,18 +11,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="app.js"></script>
     <title>Task</title>
   </head>
-  <body>
+  <body onload="ListData()">
    <header>
     <nav class="navbar navbar-light">
         <div class="nav-left-section">
-         <a class="navbar-brand"><h2>ToDo List</h2></a> 
+         <a class="navbar-brand"><h2>ToDo List</h2></a>
          <div class="data">
                 <h4>4 Incomplete Task</h4>
                 <span>Thursday 6, June 2019</span>
                </div>
-        </div>   
+        </div>
         <div class="menu">
             <a href="#" class="active">Incomplete Task</a>
             <a href="selected.html">Completed Task</a>
@@ -45,39 +46,11 @@
                                 <th> Actions </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"><i class="material-icons">check_circle_outline</i></th>
-                                <td class="tdColorBlue"> Client Meeting </td>
-                                <td> 08 May 2019 </td>
-                                <td><i class="material-icons iDark">edit</i>
-                                    <i class="material-icons">delete_outline</i></td>
-                            </tr>
-                            <tr>
-                              <th scope="row"><i class="material-icons">check_circle_outline</i></th>
-                              <td class="tdColorBlue"> Desing App Interface </td>
-                              <td> 15 May 2019 </td>
-                              <td><i class="material-icons iDark">edit</i>
-                                <i class="material-icons">delete_outline</i></td>
-                            </tr>
-                            <tr>
-                              <th scope="row"><i class="material-icons">check_circle_outline</i></th>
-                              <td class="tdColorBlue"> Learn Node.Js </td>
-                              <td> 03 Sep 2019 </td>
-                              <td><i class="material-icons iDark">edit</i>
-                                <i class="material-icons">delete_outline</i></td>
-                            </tr>
-                            <tr>
-                              <th scope="row"><i class="material-icons">check_circle_outline</i></th>
-                              <td class="tdColorBlue"> Bring the poppy out XD :v </td>
-                              <td> 24 July 2019 </td>
-                              <td><i class="material-icons iDark">edit</i>
-                                <i class="material-icons">delete_outline</i></td>
-                            </tr>
+                        <tbody id="TableBody">
                         </tbody>
                     </table>
                 </div>
-    
+
        </div>
 </section>
   <footer>
